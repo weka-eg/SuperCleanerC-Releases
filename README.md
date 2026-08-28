@@ -26,7 +26,7 @@
 
 </div>
 
-## 📖 Overview
+##  Overview
 
 **Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets system junk, orphaned installer caches, component store bloat, kernel crash dumps, developer caches, and dormant hibernation files that conventional cleaning utilities consistently overlook.
 
@@ -34,24 +34,24 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Feature | Description | Impact |
 | :--- | :--- | :--- |
-| 🧩 **Patch Cleaner** | Deep-scans `C:\Windows\Installer` against the Windows Registry to isolate and eliminate orphaned `.msi` and `.msp` packages. | Reclaims 5 GB – 30 GB |
-| ⚡ **LiveKernel Reports** | Purges dormant kernel-level crash diagnostics and hardware triage minidumps from `%SystemRoot%\LiveKernelReports`. | Reclaims 1 GB – 10 GB |
-| 🔋 **Hibernation Optimizer** | One-click toggling of Windows Hibernation via `powercfg -h off` with immediate zero-byte reclamation of `hiberfil.sys`. | Reclaims 8 GB – 64 GB (RAM size) |
-| 📦 **npm Cache Cleaner** | Scans and cleans persistent Node.js/npm global package caches located in `%AppData%\npm-cache` and `~/.npm`. | Reclaims 2 GB – 15 GB |
-| 🛠️ **Windows Component Store** | Integrates with native Windows DISM engine (`/StartComponentCleanup /ResetBase`) to consolidate and compress superseded WinSxS components. | Reclaims 3 GB – 12 GB |
-| 🧹 **Deep Temp & Prefetch** | Comprehensive cleaner for User/System `%TEMP%`, `Prefetch`, CrashDumps, Windows Error Reporting (WER), and SoftwareDistribution downloads. | Reclaims 2 GB – 20 GB |
-| 🛡️ **System Tray Monitor** | Silent, low-overhead background monitor running periodic 3-hour junk assessments with smart notifications when junk exceeds 5 GB. | Zero CPU impact |
-| ☁️ **Cloud-Managed Config** | Real-time synchronization with Google Firebase to dynamically push cleaning rules, maintenance flags, and urgent security broadcasts. | Instant policy delivery |
-| 🔑 **Hardware-Locked Licensing** | Cryptographically bound 1-PC hardware license system utilizing SHA-256 hashed hardware GUIDs and AES-256 protected local registries. | Uncompromising protection |
-| 🔄 **Dual-Engine Auto-Updater** | Integrated background update manager supporting both prompted visual updates and silent background binary replacements. | Zero-friction upgrades |
+|  **Patch Cleaner** | Deep-scans `C:\Windows\Installer` against the Windows Registry to isolate and eliminate orphaned `.msi` and `.msp` packages. | Reclaims 5 GB – 30 GB |
+|  **LiveKernel Reports** | Purges dormant kernel-level crash diagnostics and hardware triage minidumps from `%SystemRoot%\LiveKernelReports`. | Reclaims 1 GB – 10 GB |
+|  **Hibernation Optimizer** | One-click toggling of Windows Hibernation via `powercfg -h off` with immediate zero-byte reclamation of `hiberfil.sys`. | Reclaims 8 GB – 64 GB (RAM size) |
+|  **npm Cache Cleaner** | Scans and cleans persistent Node.js/npm global package caches located in `%AppData%\npm-cache` and `~/.npm`. | Reclaims 2 GB – 15 GB |
+|  **Windows Component Store** | Integrates with native Windows DISM engine (`/StartComponentCleanup /ResetBase`) to consolidate and compress superseded WinSxS components. | Reclaims 3 GB – 12 GB |
+|  **Deep Temp & Prefetch** | Comprehensive cleaner for User/System `%TEMP%`, `Prefetch`, CrashDumps, Windows Error Reporting (WER), and SoftwareDistribution downloads. | Reclaims 2 GB – 20 GB |
+|  **System Tray Monitor** | Silent, low-overhead background monitor running periodic 3-hour junk assessments with smart notifications when junk exceeds 5 GB. | Zero CPU impact |
+|  **Cloud-Managed Config** | Real-time synchronization with Google Firebase to dynamically push cleaning rules, maintenance flags, and urgent security broadcasts. | Instant policy delivery |
+|  **Hardware-Locked Licensing** | Cryptographically bound 1-PC hardware license system utilizing SHA-256 hashed hardware GUIDs and AES-256 protected local registries. | Uncompromising protection |
+|  **Dual-Engine Auto-Updater** | Integrated background update manager supporting both prompted visual updates and silent background binary replacements. | Zero-friction upgrades |
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
@@ -67,7 +67,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ---
 
-## 💻 System Requirements
+##  System Requirements
 
 | Requirement | Minimum Specification | Recommended Specification |
 | :--- | :--- | :--- |
@@ -81,7 +81,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 Super Cleaner C utilizes a multi-layered pipeline to ensure rapid scanning, maximum disk space recovery, and absolute operating system safety.
 
@@ -124,7 +124,7 @@ When minimized, Super Cleaner C parks in the Windows Notification Area consuming
 
 ---
 
-## 🔐 Integrity & SHA-256 Verification
+##  Integrity & SHA-256 Verification
 
 Every official release binary is code-signed by **WEKA TEAM** and published with a cryptographic SHA-256 checksum. Always verify your download before running.
 
@@ -144,7 +144,7 @@ Hash Algorithm: `SHA256`
 
 ---
 
-## 🛡️ Security & Privacy
+##  Security & Privacy
 
 We believe in complete transparency and user privacy. Super Cleaner C is engineered with **Privacy by Design**:
 - **Zero Personal Data Collection**: We never access your documents, photos, browsing history, keystrokes, or credentials.
@@ -152,12 +152,12 @@ We believe in complete transparency and user privacy. Super Cleaner C is enginee
 - **Encrypted Communications**: All cloud communications with Firebase utilize HTTPS / TLS 1.2+ with strict endpoint routing.
 
 For comprehensive details, please review our dedicated documentation:
-- 🔒 **[Privacy Policy](PRIVACY.md)** — Complete breakdown of collected telemetry and data retention policies.
-- 🛡️ **[Security Policy](SECURITY.md)** — Cryptographic details, obfuscation methods, and vulnerability reporting.
+-  **[Privacy Policy](PRIVACY.md)** — Complete breakdown of collected telemetry and data retention policies.
+-  **[Security Policy](SECURITY.md)** — Cryptographic details, obfuscation methods, and vulnerability reporting.
 
 ---
 
-## 📄 License
+##  License
 
 **Super Cleaner C** is proprietary software developed and owned by **WEKA TEAM**.
 
@@ -167,7 +167,7 @@ For comprehensive details, please review our dedicated documentation:
 
 ---
 
-## 💬 Contact & Support
+##  Contact & Support
 
 Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 
