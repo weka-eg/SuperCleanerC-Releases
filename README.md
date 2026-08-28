@@ -53,7 +53,7 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
 1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2.zip`) from the official repository:
-   - [Official Releases Repository](SuperCleanerC-Releases/releases/tag/v1.2)
+   - [Official Releases Repository](github.com/weka-eg/SuperCleanerC-Releases/releases/tag/v1.2)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
 3. **Right-click** and select **Run as Administrator** (Administrative elevation is required to manage DISM, Windows Installer caches, and system-level directories).
