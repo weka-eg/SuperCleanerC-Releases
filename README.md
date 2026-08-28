@@ -122,35 +122,6 @@ When minimized, Super Cleaner C parks in the Windows Notification Area consuming
 
 ---
 
-## 🖼️ Interface & Screenshots
-
-<div align="center">
-
-```
-+-------------------------------------------------------------------------+
-|  [⚡] SUPER CLEANER C v1.2                           [—] [口] [X]        |
-+-------------------------------------------------------------------------+
-|  STATUS: System Protected & Activated                     [ WEKA TEAM ] |
-|                                                                         |
-|  [  SCAN NOW  ]             [  CLEAN SYSTEM NOW  ]                      |
-|                                                                         |
-|  Found Junk: 24.85 GB                                                   |
-|  ---------------------------------------------------------------------  |
-|  [X] Windows Installer Orphaned Patches (.msi/.msp)           14.20 GB  |
-|  [X] DISM Windows Component Store (WinSxS)                     4.60 GB  |
-|  [X] Hibernation File Optimizer (hiberfil.sys)                 3.80 GB  |
-|  [X] LiveKernel Diagnostic Dump Reports                        1.15 GB  |
-|  [X] Node.js npm Cache Files                                   0.85 GB  |
-|  [X] System & User Temp / Prefetch Caches                      0.25 GB  |
-|                                                                         |
-|  System Tray Monitor: ACTIVE (Interval: 3h | Threshold: 5 GB)           |
-+-------------------------------------------------------------------------+
-```
-
-*(Place visual interface screenshots in `/Assets/Screenshots/` before building public docs)*
-
-</div>
-
 ---
 
 ## 🔐 Integrity & SHA-256 Verification
