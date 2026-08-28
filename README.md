@@ -28,7 +28,7 @@
 
 ##  Overview
 
-**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets system junk, orphaned installer caches, component store bloat, kernel crash dumps, developer caches, and dormant hibernation files that conventional cleaning utilities consistently overlook.
+**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, caches, and Windows maintenance items that may accumulate over time.
 
 Designed as a **portable, single-file executable**, Super Cleaner C requires no installation, leaves no unmanaged registry leftovers, and comes fully bundled with its .NET 8 runtime for instant execution on any modern 64-bit Windows environment.
 
@@ -36,18 +36,16 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 ##  Key Features
 
-| Feature | Description | Impact |
-| :--- | :--- | :--- |
-|  **Patch Cleaner** | Deep-scans `C:\Windows\Installer` against the Windows Registry to isolate and eliminate orphaned `.msi` and `.msp` packages. | Reclaims 5 GB – 30 GB |
-|  **LiveKernel Reports** | Purges dormant kernel-level crash diagnostics and hardware triage minidumps from `%SystemRoot%\LiveKernelReports`. | Reclaims 1 GB – 10 GB |
-|  **Hibernation Optimizer** | One-click toggling of Windows Hibernation via `powercfg -h off` with immediate zero-byte reclamation of `hiberfil.sys`. | Reclaims 8 GB – 64 GB (RAM size) |
-|  **npm Cache Cleaner** | Scans and cleans persistent Node.js/npm global package caches located in `%AppData%\npm-cache` and `~/.npm`. | Reclaims 2 GB – 15 GB |
-|  **Windows Component Store** | Integrates with native Windows DISM engine (`/StartComponentCleanup /ResetBase`) to consolidate and compress superseded WinSxS components. | Reclaims 3 GB – 12 GB |
-|  **Deep Temp & Prefetch** | Comprehensive cleaner for User/System `%TEMP%`, `Prefetch`, CrashDumps, Windows Error Reporting (WER), and SoftwareDistribution downloads. | Reclaims 2 GB – 20 GB |
-|  **System Tray Monitor** | Silent, low-overhead background monitor running periodic 3-hour junk assessments with smart notifications when junk exceeds 5 GB. | Zero CPU impact |
-|  **Cloud-Managed Config** | Real-time synchronization with Google Firebase to dynamically push cleaning rules, maintenance flags, and urgent security broadcasts. | Instant policy delivery |
-|  **Hardware-Locked Licensing** | Cryptographically bound 1-PC hardware license system utilizing SHA-256 hashed hardware GUIDs and AES-256 protected local registries. | Uncompromising protection |
-|  **Dual-Engine Auto-Updater** | Integrated background update manager supporting both prompted visual updates and silent background binary replacements. | Zero-friction upgrades |
+| Feature | Description |
+| :--- | :--- |
+| **Deep System Cleaning** | Scans supported Windows locations and identifies removable system and temporary data. |
+| **Windows Maintenance** | Provides supported Windows maintenance and optimization tools. |
+| **Developer Cache Cleaning** | Helps clean supported caches created by development tools and package managers. |
+| **Hibernation Management** | Provides a convenient option to manage Windows hibernation settings. |
+| **Background Monitoring** | Optional system-tray monitoring helps track accumulated temporary data. |
+| **Cloud Services** | Internet connectivity may be used for activation, configuration, and service-related functionality. |
+| **Hardware-Bound Licensing** | Activation keys are associated with the authorized device to help prevent unauthorized use. |
+| **Automatic Updates** | The application can notify users when a newer official release is available. |
 
 ---
 
@@ -60,7 +58,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
 3. **Right-click** and select **Run as Administrator** (Administrative elevation is required to manage DISM, Windows Installer caches, and system-level directories).
-4. Enter your unique **Activation Key** when prompted to bind the software to your hardware.
+4. Enter your unique **Activation Key** when prompted. An Internet connection is required for the initial activation.
 
 > [!IMPORTANT]
 > Super Cleaner C modifies system-protected caches (`C:\Windows\Installer`, `WinSxS`, `LiveKernelReports`). **Administrator privileges** are mandatory. The application will automatically request UAC elevation upon launch.
@@ -83,44 +81,23 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ##  How It Works
 
-Super Cleaner C utilizes a multi-layered pipeline to ensure rapid scanning, maximum disk space recovery, and absolute operating system safety.
+Super Cleaner C uses a multi-stage workflow designed to make supported Windows maintenance tasks simple and safe while keeping proprietary implementation details private.
 
-```mermaid
-flowchart TD
-    A[Launch SuperCleanerC.exe] --> B[UAC Elevation Verification]
-    B --> C{License & Cloud Config Check}
-    C -->|Valid Token / Active Key| D[Load WPF Clean Interface]
-    C -->|Offline Token Fallback| D
-    C -->|Unactivated / Expired| E[Display Activation Modal]
-    
-    D --> F[Run One-Click Quick / Deep Scan]
-    
-    subgraph Cleaning Engines
-        F --> G1[Windows Installer Reconciliation]
-        F --> G2[LiveKernel Dump Scanner]
-        F --> G3[DISM Component Store Engine]
-        F --> G4[Hibernation & Hiberfil Resolver]
-        F --> G5[npm & Developer Cache Scraper]
-        F --> G6[Temp, WER & Prefetch Cleaner]
-    end
-    
-    G1 & G2 & G3 & G4 & G5 & G6 --> H[Aggregate Space Calculation]
-    H --> I[Execute Safe Atomic Cleaning]
-    I --> J[Update Local & Firebase Telemetry Stats]
-    J --> K[Minimize to System Tray Monitor]
-    K -->|3-Hour Interval / >5GB Junk| L[Desktop Toast Notification]
-```
+### 1. Activation & Configuration
+The first activation requires an Internet connection. After successful activation, the application can operate in **Offline Mode** for normal supported use without requiring a continuous Internet connection.
 
-### 1. Scanning Phase
-When you click **Scan**, the application asynchronously inspects your storage drives across all active cleaner modules. Registry hives (`HKLM\Software\Microsoft\Windows\CurrentVersion\Installer\UserData`) are cross-referenced against `C:\Windows\Installer` to identify orphaned files without touching active software setups.
+Internet access may still be required for services such as activation-related checks, configuration synchronization, or checking for new official releases.
 
-### 2. Cleaning Phase
-Clean operations execute atomically with real-time progress callbacks. System services and temporary file handles are safely released, locked files are scheduled for boot-time cleanup if needed, and DISM base resets compress Windows component backups without breaking core dependencies.
+### 2. Scanning
+When you start a scan, the application checks supported system and temporary locations and calculates the amount of data that can potentially be cleaned.
 
-### 3. Background Tray Monitoring
-When minimized, Super Cleaner C parks in the Windows Notification Area consuming minimal memory (~15 MB). Every 3 hours, a non-intrusive background check evaluates accumulation across temp zones. If accumulated junk exceeds **5 GB**, a native toast alert invites you to perform a one-click clean.
+### 3. Cleaning
+After reviewing the scan results, supported items can be cleaned through the application's interface. The application is designed to avoid interfering with active Windows components and installed applications.
 
----
+### 4. Background Monitoring
+When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations.
+
+> **Implementation Note:** The internal cleaning logic, detection rules, licensing implementation, cloud configuration structure, and other proprietary components are intentionally not documented in this repository.
 
 ---
 
@@ -146,14 +123,14 @@ Hash Algorithm: `SHA256`
 
 ##  Security & Privacy
 
-We believe in complete transparency and user privacy. Super Cleaner C is engineered with **Privacy by Design**:
-- **Zero Personal Data Collection**: We never access your documents, photos, browsing history, keystrokes, or credentials.
-- **Irreversible Anonymization**: Hardware identifiers are hashed via SHA-256 on the client side before transmission.
-- **Encrypted Communications**: All cloud communications with Firebase utilize HTTPS / TLS 1.2+ with strict endpoint routing.
+Super Cleaner C is designed with privacy and security in mind.
 
-For comprehensive details, please review our dedicated documentation:
--  **[Privacy Policy](PRIVACY.md)** — Complete breakdown of collected telemetry and data retention policies.
--  **[Security Policy](SECURITY.md)** — Cryptographic details, obfuscation methods, and vulnerability reporting.
+- The application does not need access to your personal documents, photos, passwords, or keystrokes to perform its supported cleaning functions.
+- Internet connectivity is used for supported online services such as activation, configuration, and release/update checks.
+- After successful activation, normal supported operation can be performed offline.
+- Proprietary implementation details related to licensing, configuration, and internal application logic are not publicly disclosed.
+
+For additional information, please refer to the privacy and security documentation included with the official release when available.
 
 ---
 
