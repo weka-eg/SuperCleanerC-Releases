@@ -56,7 +56,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
    - [Official Releases Repository](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
-3. **Right-click** and select **Run as Administrator** (Administrative elevation is required to manage DISM, Windows Installer caches, and system-level directories).
+3. **Right-click** and select **Run as Administrator** ((Administrative elevation is required to manage system-protected files, system caches, and perform low-level Windows maintenance).
 4. Enter your unique **Activation Key** when prompted. An Internet connection is required for the initial activation.
 
 > [!IMPORTANT]
