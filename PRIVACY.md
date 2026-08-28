@@ -7,7 +7,7 @@
 
 ---
 
-## 🛡️ Our Privacy Commitment
+##  Our Privacy Commitment
 
 **WEKA TEAM** is committed to protecting your privacy and ensuring you have complete control over your personal data. **Super Cleaner C** is engineered under a strict **Privacy-by-Design** philosophy. We build tools to optimize your Windows system, not to harvest your personal information.
 
@@ -15,7 +15,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 ---
 
-## 📊 Summary of Data Practices
+##  Summary of Data Practices
 
 | Category | Description | Stored Locally | Stored in Cloud |
 | :--- | :--- | :---: | :---: |
@@ -30,7 +30,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 ---
 
-## 🔍 Data We Collect and Process
+##  Data We Collect and Process
 
 ### 1. Anonymous Hardware Identifier (HWID)
 - **What it is:** A 16-character hexadecimal string derived by computing an irreversible SHA-256 hash over the system's Windows `MachineGuid` registry entry.
@@ -55,7 +55,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 ---
 
-## 🚫 Data We NEVER Collect
+##  Data We NEVER Collect
 
 We strictly reject the collection of sensitive and personal data. Super Cleaner C **never** accesses, scans, reads, or transmits:
 
@@ -72,7 +72,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 
 ---
 
-## ☁️ Where Data is Stored & Infrastructure Security
+##  Where Data is Stored & Infrastructure Security
 
 - **Cloud Platform:** Google Firebase Realtime Database (hosted on Google Cloud Platform enterprise infrastructure).
 - **Transport Encryption:** All telemetry and license validation requests are secured via **HTTPS / TLS 1.2+** with modern cipher suites.
@@ -81,7 +81,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 
 ---
 
-## 🎯 Purpose and Lawful Basis of Processing
+##  Purpose and Lawful Basis of Processing
 
 We process telemetry and hardware identifiers exclusively for the following operational reasons:
 
@@ -92,7 +92,7 @@ We process telemetry and hardware identifiers exclusively for the following oper
 
 ---
 
-## 🗑️ Data Retention and Right to Deletion
+##  Data Retention and Right to Deletion
 
 We respect your right to data sovereignty. You may request the permanent purge of your device record from our cloud database at any time.
 
@@ -106,7 +106,7 @@ We respect your right to data sovereignty. You may request the permanent purge o
 
 ---
 
-## 🤝 Third-Party Sharing
+##  Third-Party Sharing
 
 - **Zero Third-Party Advertising:** Super Cleaner C is completely ad-free. We do not integrate any advertising SDKs (such as AdMob, Unity, or AppLovin).
 - **Zero Third-Party Analytics:** We do not embed external tracking frameworks such as Google Analytics, Segment, or Facebook Pixel.
@@ -114,13 +114,13 @@ We respect your right to data sovereignty. You may request the permanent purge o
 
 ---
 
-## 🔄 Updates to this Privacy Policy
+##  Updates to this Privacy Policy
 
 We may update this Privacy Policy periodically to reflect new features or regulatory requirements. Any material changes will be broadcasted directly within the application via our real-time cloud notification service.
 
 ---
 
-## 💬 Contact Us
+##  Contact Us
 
 If you have questions, concerns, or requests regarding this Privacy Policy, please contact:
 
