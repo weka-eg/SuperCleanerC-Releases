@@ -18,43 +18,6 @@
 
 ---
 
-## ✨ Core Features & Capabilities
-
-### 1. 📦 Patch Cleaner (Windows Installer Cache)
-* Intelligently scans `C:\Windows\Installer` for orphaned `.msi` and `.msp` patch files no longer needed by any installed software.
-* Safely reclaims 5 GB to 30+ GB of hidden drive space without affecting system integrity.
-
-### 2. 🧹 Deep Temp & Prefetch Engine
-* Comprehensive cleaning of `%LocalAppData%\Temp`, `C:\Windows\Temp`, and Windows Prefetch files.
-* Frees up junk files left behind by deleted apps and web browsers.
-
-### 3. 💥 LiveKernel Reports & Crash Dumps
-* Scans and purges Windows kernel crash dump files in `C:\Windows\LiveKernelReports`.
-
-### 4. ⚡ Hibernation RAM Optimizer
-* Disables Windows hibernation (`powercfg -h off`) and deletes `hiberfil.sys`.
-* Instantly reclaims storage equal to your **total installed RAM size** (8 GB, 16 GB, 32 GB, etc.).
-
-### 5. 🛠️ Developer & Package Cache Cleaners
-* Deep cleans global package caches, including `npm cache clean --force` and temporary developer artifacts.
-
-### 6. 🧱 Windows Component Store (DISM WinSxS)
-* Executes deep cleanup on the Windows WinSxS folder:
-  `Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase`
-* Deletes superseded Windows update packages safely.
-
-### 8. 🔄 Customizable Auto-Clean on Boot
-* Integrated with Windows Task Scheduler to run silently on PC logon.
-* Customize exactly which categories get cleaned on boot with the gear settings (`⚙️`).
-
-### 9. 🚀  Auto-Updater
-* Integrated with GitHub Releases to automatically detect, download, and replace itself with the latest version in one click.
-
-### 10. 🔒 Hardware-Locked Security & License Vault
-* 1-PC cryptographic hardware lock (`HWID`).
-* Full lifetime offline access for activated users with real-time cloud management.
-
----
 
 ## 🚀 How to Run
 
