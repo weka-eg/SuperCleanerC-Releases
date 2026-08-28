@@ -20,7 +20,6 @@
 [![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![License](https://img.shields.io/badge/License-Proprietary%20%7C%20WEKA%20TEAM-orange?style=for-the-badge)](https://t.me/Vandiom5)
 
-[Features](#-key-features) • [Installation](#-installation) • [System Requirements](#-system-requirements) • [How It Works](#-how-it-works) • [Screenshots](#-interface--screenshots) • [Integrity Verification](#-integrity--sha-256-verification) • [Security & Privacy](#-security--privacy) • [Support](#-contact--support)
 
 ---
 
