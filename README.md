@@ -108,7 +108,7 @@ Every official release binary is code-signed by **WEKA TEAM** and published with
 ```powershell
 Get-FileHash -Path ".\SuperCleanerC.exe" -Algorithm SHA256 | Format-List
 ```
-Compare the output hash with the official hash published in the [GitHub Release Notes](https://github.com/weka-eg/SuperCleanerC-Releases).
+Compare the output hash with the official hash published in the [GitHub Release Notes](https://github.com/weka-eg/SuperCleanerC-Releases/releases).
 
 ### 2. Verify Authenticode Digital Signature
 ```powershell
