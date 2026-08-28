@@ -61,7 +61,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 4. Enter your unique **Activation Key** when prompted. An Internet connection is required for the initial activation.
 
 > [!IMPORTANT]
-> Super Cleaner C modifies system-protected caches (`C:\Windows\Installer`, `WinSxS`, `LiveKernelReports`). **Administrator privileges** are mandatory. The application will automatically request UAC elevation upon launch.
+> Super Cleaner C modifies system-protected caches. **Administrator privileges** are mandatory. The application will automatically request UAC elevation upon launch.
 
 ---
 
