@@ -27,7 +27,7 @@ We provide active security maintenance, vulnerability patches, and cloud configu
 
 ---
 
-## 🔒 Binary Integrity & Authenticity
+##  Binary Integrity & Authenticity
 
 To protect users against supply-chain tampering, unauthorized repackaging, and man-in-the-middle attacks, every official release of Super Cleaner C undergoes a strict cryptographic verification workflow:
 
