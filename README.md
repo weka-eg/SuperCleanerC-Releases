@@ -51,7 +51,7 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
-1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2_SmartUAC.zip`) from the official repository:
+1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2.zip`) from the official repository:
    - [Official Releases Repository](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
