@@ -34,7 +34,7 @@ To protect users against supply-chain tampering, unauthorized repackaging, and m
 ```mermaid
 flowchart LR
     A[C# WPF Source Code] --> B[Dotnet Release Build]
-    B --> C[Obfuscar Symbol & String Obfuscation]
+    B --> C[Obfuscar Bytecode & String Encryption]
     C --> D[Self-Contained Single-File Publish]
     D --> E[Authenticode SHA-256 Digital Signature]
     E --> F[DigiCert RFC 3161 Timestamping]
@@ -93,10 +93,10 @@ Super Cleaner C includes a hardened auto-update engine that safeguards against m
 
 To protect intellectual property, cryptographic salts, and anti-piracy mechanisms from decompilation (e.g. dnSpy, ILSpy, de4dot):
 
-- **Symbol Renaming:** Classes, internal fields, private methods, and properties are obfuscated into non-printable Unicode symbols using **Obfuscar**.
-- **String Encryption:** Sensitive strings (including registry paths, cryptographic salts, and API endpoints) are encrypted at the bytecode level.
-- **Control Flow Flattening:** Critical routines (such as activation validation and hash comparison) utilize scrambled control flow blocks.
-- **Single-File Bundling:** The application is packed as a self-contained single executable with native library self-extraction.
+- **String & Resource Encryption:** Sensitive strings (including registry paths, cryptographic salts, and API endpoints) are encrypted at the bytecode level.
+- **Private Member Obfuscation:** Internal fields, private methods, and cryptographic helpers are obfuscated using **Obfuscar** while maintaining stable WPF data-binding interfaces.
+- **Control Flow Protection:** Critical routines (such as activation validation and hash comparison) utilize scrambled control flow blocks.
+- **Single-File Bundling:** The application is packed as a self-contained single executable with native runtime bundling.
 
 ---
 
@@ -107,7 +107,7 @@ Super Cleaner C operates under strict non-destructive safety parameters:
 - **Windows Installer Integrity:** Only orphaned `.msi` and `.msp` packages with zero corresponding product registrations in `HKLM\Software\Microsoft\Windows\CurrentVersion\Installer\UserData` are candidates for removal.
 - **Native DISM Integration:** Component Store cleanup executes via native Microsoft DISM subsystem APIs (`Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase`), preventing registry corruption.
 - **Process Isolation:** Active, locked, or in-use files in `%TEMP%` and `%LOCALAPPDATA%` are gracefully bypassed rather than forcefully unlocked to prevent application crashes.
-- **UAC Safeguard:** High-privilege tasks strictly require administrative rights to prevent unprivileged users from manipulating core system caches.
+- **Smart Execution & UAC Isolation:** The application launches under standard user privileges (`asInvoker`) for safe system-tray background monitoring. Administrative elevation (UAC) is strictly requested on-demand via isolated elevated worker routines only when executing system-protected operations (e.g. Windows Installer cleanup, DISM, Hibernation, or Kernel Dump removal).
 
 ---
 
