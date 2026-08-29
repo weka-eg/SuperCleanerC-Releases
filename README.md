@@ -47,7 +47,7 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
