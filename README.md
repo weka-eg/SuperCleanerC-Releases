@@ -20,7 +20,6 @@
 [![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![License](https://img.shields.io/badge/License-Proprietary%20%7C%20WEKA%20TEAM-orange?style=for-the-badge)](https://t.me/Vandiom5)
 
-
 ---
 
 </div>
@@ -48,19 +47,19 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 ---
 
-##  Installation
+## 🚀 Installation
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
-1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2.zip`) from the official repository:
+1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2_SmartUAC.zip`) from the official repository:
    - [Official Releases Repository](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
-3. **Right-click** and select **Run as Administrator** ((Administrative elevation is required to manage system-protected files, system caches, and perform low-level Windows maintenance).
+3. **Run normally** by double-clicking `SuperCleanerC.exe` (Running as Administrator on startup is **not required**).
 4. Enter your unique **Activation Key** when prompted. An Internet connection is required for the initial activation.
 
-> [!IMPORTANT]
-> Super Cleaner C modifies system-protected caches. **Administrator privileges** are mandatory. The application will automatically request UAC elevation upon launch.
+> [!NOTE]
+> Super Cleaner C launches seamlessly as a standard user process (`asInvoker`) and integrates with Windows Startup and System Tray without initial UAC prompts. **Administrative elevation is requested on-demand only** when needed to manage system-protected files, system caches, and perform low-level Windows maintenance.
 
 ---
 
@@ -71,14 +70,14 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 | **Operating System** | Windows 10 (64-bit, Version 1809+) | Windows 11 (64-bit, All Builds) |
 | **Architecture** | x64 (AMD64 / Intel 64) | x64 |
 | **Runtime** | **None** (Bundled .NET 8 Self-Contained) | **None** (Bundled .NET 8 Self-Contained) |
-| **Privileges** | Local Administrator Rights | Local Administrator Rights |
+| **Privileges** | Standard User Rights *(UAC requested on-demand for system cleaning)* | Standard User Rights |
 | **Memory (RAM)** | 512 MB available | 2 GB+ |
 | **Disk Space** | 180 MB free for executable | 500 MB free storage |
 | **Network** | Internet connection for initial activation | Broadband connection for real-time cloud updates |
 
 ---
 
-##  How It Works
+## ⚙️ How It Works
 
 Super Cleaner C uses a multi-stage workflow designed to make supported Windows maintenance tasks simple and safe while keeping proprietary implementation details private.
 
@@ -90,8 +89,8 @@ Internet access may still be required for services such as activation-related ch
 ### 2. Scanning
 When you start a scan, the application checks supported system and temporary locations and calculates the amount of data that can potentially be cleaned.
 
-### 3. Cleaning
-After reviewing the scan results, supported items can be cleaned through the application's interface. The application is designed to avoid interfering with active Windows components and installed applications.
+### 3. Cleaning & Smart Elevation
+After reviewing the scan results, supported items can be cleaned through the application's interface. Non-protected items (such as user caches and temporary files) are cleaned directly. When cleaning system-protected components, administrative elevation is requested on-demand to perform the operation safely.
 
 ### 4. Background Monitoring
 When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations.
@@ -150,7 +149,7 @@ Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 - **Lead Developer**: WEKA TEAM
 - **Official Telegram Support**: [@Vandiom5](https://t.me/Vandiom5)
 - **Direct Telegram Channel**: [https://t.me/Vandiom5](https://t.me/Vandiom5)
-- **GitHub Repository**: [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC-Releases)
+- **GitHub Repository**: [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC/Releases)
 
 ---
 
