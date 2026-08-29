@@ -100,14 +100,14 @@ To protect intellectual property, cryptographic salts, and anti-piracy mechanism
 
 ---
 
-##  Cleaning Engine Safety & System Protection
+## Cleaning Engine Safety & System Protection
 
 Super Cleaner C operates under strict non-destructive safety parameters:
 
-- **Windows Installer Integrity:** Only orphaned `.msi` and `.msp` packages with zero corresponding product registrations in `HKLM\Software\Microsoft\Windows\CurrentVersion\Installer\UserData` are candidates for removal.
-- **Native DISM Integration:** Component Store cleanup executes via native Microsoft DISM subsystem APIs (`Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase`), preventing registry corruption.
-- **Process Isolation:** Active, locked, or in-use files in `%TEMP%` and `%LOCALAPPDATA%` are gracefully bypassed rather than forcefully unlocked to prevent application crashes.
-- **Smart Execution & UAC Isolation:** The application launches under standard user privileges (`asInvoker`) for safe system-tray background monitoring. Administrative elevation (UAC) is strictly requested on-demand via isolated elevated worker routines only when executing system-protected operations (e.g. Windows Installer cleanup, DISM, Hibernation, or Kernel Dump removal).
+- **Windows Installer Integrity:** Safely identifies and removes obsolete installer packages without affecting active program configurations or system integrity.
+- **System Store Optimization:** Utilizes official Windows maintenance protocols to clean and compact system components securely, avoiding corruption or stability issues.
+- **Application Stability:** Protects active system processes and open applications by safely skipping in-use and locked temporary files during cleaning operations.
+- **Privilege Separation & Smart Elevation:** Operates smoothly under standard user permissions for background monitoring, only requesting elevated administrator access on demand when protected system maintenance is explicitly initiated.
 
 ---
 
