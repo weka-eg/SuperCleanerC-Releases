@@ -15,7 +15,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 ---
 
-## 📊 Summary of Data Practices
+##  Summary of Data Practices
 
 | Category | Description | Stored Locally | Stored in Cloud |
 | :--- | :--- | :---: | :---: |
