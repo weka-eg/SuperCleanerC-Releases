@@ -1,6 +1,6 @@
 # Privacy Policy for Super Cleaner C
 
-**Last Updated:** August 28, 2026  
+**Last Updated:** August 29, 2026  
 **Effective Date:** August 28, 2026  
 **Developer:** WEKA TEAM  
 **Contact:** [@Vandiom5](https://t.me/Vandiom5)
@@ -15,7 +15,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 ---
 
-##  Summary of Data Practices
+## 📊 Summary of Data Practices
 
 | Category | Description | Stored Locally | Stored in Cloud |
 | :--- | :--- | :---: | :---: |
@@ -72,7 +72,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 
 ---
 
-##  Where Data is Stored & Infrastructure Security
+## ☁️ Where Data is Stored & Infrastructure Security
 
 - **Cloud Platform:** Google Firebase Realtime Database (hosted on Google Cloud Platform enterprise infrastructure).
 - **Transport Encryption:** All telemetry and license validation requests are secured via **HTTPS / TLS 1.2+** with modern cipher suites.
@@ -127,4 +127,4 @@ If you have questions, concerns, or requests regarding this Privacy Policy, plea
 - **Developer:** WEKA TEAM
 - **Direct Telegram:** [@Vandiom5](https://t.me/Vandiom5)
 - **Telegram Support:** [https://t.me/Vandiom5](https://t.me/Vandiom5)
-- **GitHub Repository:** [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC-Releases)
+- **GitHub Repository:** [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC/Releases)
