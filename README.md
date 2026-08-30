@@ -16,7 +16,7 @@
 [![Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0%20WPF%20(Self--Contained)-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![Version](https://img.shields.io/badge/Version-v1.2%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F92%20Clean-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1)
 [![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Signed-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
 [![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
 [![License](https://img.shields.io/badge/License-Proprietary%20%7C%20WEKA%20TEAM-orange?style=for-the-badge)](https://t.me/Vandiom5)
