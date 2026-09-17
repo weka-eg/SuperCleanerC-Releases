@@ -18,6 +18,7 @@
 [![Version](https://img.shields.io/badge/Version-v1.3%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
 [![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Signed-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean%20Scan-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1?nocache=1)
 [![License](https://img.shields.io/badge/License-Proprietary%20%7C%20WEKA%20TEAM-orange?style=for-the-badge)](https://t.me/Vandiom5)
 
 ---
@@ -132,6 +133,7 @@ Super Cleaner C is designed with privacy and security in mind.
 - Internet connectivity is used for supported online services such as activation, configuration, and release/update checks.
 - After successful activation, normal supported operation can be performed offline.
 - Proprietary implementation details related to licensing, configuration, and internal application logic are not publicly disclosed.
+- **Malware & Integrity Scan:** Certified clean scan on [VirusTotal Report](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1?nocache=1).
 
 For additional information, please refer to the privacy and security documentation included with the official release when available.
 
