@@ -3,7 +3,7 @@
 <div align="center">
 
 ```
-   _____                     ________                                ______ 
+   _____                      ________                              ______ 
   / ___/__  ______  ___  _____/ ____/ /__  ____ _____  ___  _____   / ____/ 
   \__ \/ / / / __ \/ _ \/ ___/ /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /      
  ___/ / /_/ / /_/ /  __/ /  / /___/ /  __/ /_/ / / / /  __/ /     / /___    
@@ -13,12 +13,11 @@
 
 **Next-Generation High-Performance Windows System Optimizer & Deep Cleaner**
 
-[![Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
+[![Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0%20WPF%20(Self--Contained)-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![Version](https://img.shields.io/badge/Version-v1.2%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1)
-[![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Signed-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
-[![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC/Releases)
+[![Version](https://img.shields.io/badge/Version-v1.3%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
+[![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Signed-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
+[![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![License](https://img.shields.io/badge/License-Proprietary%20%7C%20WEKA%20TEAM-orange?style=for-the-badge)](https://t.me/Vandiom5)
 
 ---
@@ -27,24 +26,29 @@
 
 ## Overview
 
-**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, caches, and Windows maintenance items that may accumulate over time.
+**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, graphics shader caches, modern desktop and AI application caches, and deep Windows maintenance items that accumulate over time.
 
 Designed as a **portable, single-file executable**, Super Cleaner C requires no installation, leaves no unmanaged registry leftovers, and comes fully bundled with its .NET 8 runtime for instant execution on any modern 64-bit Windows environment.
 
 ---
 
-## Key Features
+## Key Features (10 Core Cleaner Categories)
 
-| Feature | Description |
+| Category | Description |
 | :--- | :--- |
-| **Deep System Cleaning** | Scans supported Windows locations and identifies removable system and temporary data. |
-| **Windows Maintenance** | Provides supported Windows maintenance and optimization tools. |
-| **Developer Cache Cleaning** | Helps clean supported caches created by development tools and package managers. |
-| **Hibernation Management** | Provides a convenient option to manage Windows hibernation settings. |
-| **Background Monitoring** | Optional system-tray monitoring helps track accumulated temporary data. |
-| **Cloud Services** | Internet connectivity may be used for activation, configuration, and service-related functionality. |
-| **Hardware-Bound Licensing** | Activation keys are associated with the authorized device to help prevent unauthorized use. |
-| **Automatic Updates** | The application can notify users when a newer official release is available. |
+| **System Traces & Cache** | Deep cleanup of Windows User Temp, System Temp, Prefetch cache, and thumbnail databases. |
+| **Diagnostic Dumps** | LiveKernelReports and mini-dump crash diagnostics safely purged. |
+| **Setup Leftovers** | Orphaned MSI/MSP installer patches safely identified and removed from Windows Installer. |
+| **Packages Cache** | Development and package manager caches (npm, pip, yarn, etc.) reclaimed. |
+| **Component Store** | Windows WinSxS component store analysis and supersession cleanup via DISM. |
+| **Power Engine** | Hibernation file (`hiberfil.sys`) optimizer to reclaim gigabytes of C: drive space. |
+| **GPU & Game Shaders** *(NEW v1.3)* | DirectX, NVIDIA, AMD, and Intel graphics shader caches, plus Steam, Epic Games, EA, and Battle.net client caches. Preserves all game saves and settings. |
+| **Browser Engine Cache** *(NEW v1.3)* | Chromium & Gecko engine caches (Code Cache, GPUCache, Shaders). Strictly preserves user logins, cookies, passwords, history, and bookmarks. |
+| **Modern Desktop & AI Apps** *(NEW v1.3)* | Claude Desktop, ChatGPT Desktop, Cursor IDE, Adobe Media Cache, Spotify, Discord, Telegram, WhatsApp, and Microsoft Teams caches. |
+| **Windows Deep System** *(NEW v1.3)* | Full memory crash dumps (`MEMORY.DMP`), previous Windows installations (`Windows.old`), Windows Update delivery caches (`SoftwareDistribution\Download`), and Delivery Optimization. |
+| **System Restore Point** *(NEW v1.3)* | One-click automated Windows System Restore Point creation prior to executing deep clean operations. |
+| **Hardware-Locked Licensing** | Secure 1-PC cryptographic HWID lock with dual trial support (New Users & Global Promotional). |
+| **Silent & In-App Auto-Update** | Hardened SHA-256 binary integrity verification engine with silent background patching support. |
 
 ---
 
@@ -52,7 +56,7 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
-1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2.zip`) from the official repository:
+1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.3.zip`) from the official repository:
    - [Official Releases Repository](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
@@ -88,13 +92,13 @@ The first activation requires an Internet connection. After successful activatio
 Internet access may still be required for services such as activation-related checks, configuration synchronization, or checking for new official releases.
 
 ### 2. Scanning
-When you start a scan, the application checks supported system and temporary locations and calculates the amount of data that can potentially be cleaned.
+When you start a scan, the application checks supported system, GPU, browser, app, and temporary locations and calculates the amount of data that can potentially be cleaned.
 
-### 3. Cleaning & Smart Elevation
-After reviewing the scan results, supported items can be cleaned through the application's interface. Non-protected items (such as user caches and temporary files) are cleaned directly. When cleaning system-protected components, administrative elevation is requested on-demand to perform the operation safely.
+### 3. Automated Restore Point & Smart Elevation
+Users can toggle automatic System Restore Point creation before cleaning. Non-protected items (such as user caches and shader files) are cleaned directly. When cleaning system-protected components (`C:\Windows`, `C:\Windows.old`, DISM), administrative elevation is requested on-demand to perform the operation safely.
 
 ### 4. Background Monitoring
-When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations.
+When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations (3-hour interval, 5 GB threshold alert).
 
 > **Implementation Note:** The internal cleaning logic, detection rules, licensing implementation, cloud configuration structure, and other proprietary components are intentionally not documented in this repository.
 
@@ -108,7 +112,7 @@ Every official release binary is code-signed by **WEKA TEAM** and published with
 ```powershell
 Get-FileHash -Path ".\SuperCleanerC.exe" -Algorithm SHA256 | Format-List
 ```
-Compare the output hash with the official hash published in the [GitHub Release Notes](https://github.com/weka-eg/SuperCleanerC-Releases/releases).
+Compare the output hash with the official hash published in the [GitHub Release Notes](https://github.com/weka-eg/SuperCleanerC-Releases/releases) or `SHA256SUMS.txt`.
 
 ### 2. Verify Authenticode Digital Signature
 ```powershell
@@ -116,7 +120,8 @@ Get-AuthenticodeSignature -FilePath ".\SuperCleanerC.exe" | Format-List
 ```
 Expected Status: `Valid`  
 Signer Subject: `CN=WEKA TEAM, O=WEKA TEAM, C=EG`  
-Hash Algorithm: `SHA256`
+Hash Algorithm: `SHA256`  
+Timestamp Server: `DigiCert RFC 3161 Timestamp Responder`
 
 ---
 
@@ -125,11 +130,12 @@ Hash Algorithm: `SHA256`
 Super Cleaner C is designed with privacy and security in mind.
 
 - The application does not need access to your personal documents, photos, passwords, or keystrokes to perform its supported cleaning functions.
+- Browser cleaning strictly ignores cookies, credentials, and browsing history.
+- GPU and game cleaning strictly ignores game save files and game configurations.
 - Internet connectivity is used for supported online services such as activation, configuration, and release/update checks.
 - After successful activation, normal supported operation can be performed offline.
-- Proprietary implementation details related to licensing, configuration, and internal application logic are not publicly disclosed.
 
-For additional information, please refer to the privacy and security documentation included with the official release when available.
+For additional information, please refer to [SECURITY.md](SECURITY.md) and [PRIVACY.md](PRIVACY.md).
 
 ---
 
@@ -155,5 +161,5 @@ Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by WEKA TEAM. Empowering Windows users with cleaner, faster, and healthier PCs.</sub>
+  <sub>Built with care by WEKA TEAM. Empowering Windows users with cleaner, faster, and healthier PCs.</sub>
 </div>
