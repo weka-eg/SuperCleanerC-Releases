@@ -24,34 +24,35 @@
 
 </div>
 
-## Overview
+##  Overview
 
-**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, graphics shader caches, modern desktop and AI application caches, and deep Windows maintenance items that accumulate over time.
+**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, caches, and Windows maintenance items that may accumulate over time.
 
 Designed as a **portable, single-file executable**, Super Cleaner C requires no installation, leaves no unmanaged registry leftovers, and comes fully bundled with its .NET 8 runtime for instant execution on any modern 64-bit Windows environment.
 
 ---
 
-## Key Features (10 Core Cleaner Categories)
+##  Key Features
 
-| Category | Description |
+| Feature | Description |
 | :--- | :--- |
-| **System Traces & Cache** | Deep cleanup of Windows User Temp, System Temp, Prefetch cache, and thumbnail databases. |
-| **Diagnostic Dumps** | LiveKernelReports and mini-dump crash diagnostics safely purged. |
-| **Setup Leftovers** | Orphaned MSI/MSP installer patches safely identified and removed from Windows Installer. |
-| **Packages Cache** | Development and package manager caches (npm, pip, yarn, etc.) reclaimed. |
-| **Component Store** | Windows WinSxS component store analysis and supersession cleanup via DISM. |
-| **Power Engine** | Hibernation file (`hiberfil.sys`) optimizer to reclaim gigabytes of C: drive space. |
-| **GPU & Game Shaders** *(NEW v1.3)* | DirectX, NVIDIA, AMD, and Intel graphics shader caches, plus Steam, Epic Games, EA, and Battle.net client caches. Preserves all game saves and settings. |
-| **Browser Engine Cache** *(NEW v1.3)* | Chromium & Gecko engine caches (Code Cache, GPUCache, Shaders). Strictly preserves user logins, cookies, passwords, history, and bookmarks. |
-| **Modern Desktop & AI Apps** *(NEW v1.3)* | Claude Desktop, ChatGPT Desktop, Cursor IDE, Adobe Media Cache, Spotify, Discord, Telegram, WhatsApp, and Microsoft Teams caches. |
-| **Windows Deep System** *(NEW v1.3)* | Full memory crash dumps (`MEMORY.DMP`), previous Windows installations (`Windows.old`), Windows Update delivery caches (`SoftwareDistribution\Download`), and Delivery Optimization. |
-| **System Restore Point** *(NEW v1.3)* | One-click automated Windows System Restore Point creation prior to executing deep clean operations. |
-| **Hardware-Locked Licensing** | Secure 1-PC cryptographic HWID lock with dual trial support (New Users & Global Promotional). |
+| **Deep System Cleaning** | Scans supported Windows locations and identifies removable system and temporary data. |
+| **Windows Maintenance** | Provides supported Windows maintenance and optimization tools. |
+| **Developer Cache Cleaning** | Helps clean supported caches created by development tools and package managers. |
+| **Hibernation Management** | Provides a convenient option to manage Windows hibernation settings. |
+| **Graphics & Game Cache Cleaning** | Helps clean supported shader caches and platform client caches generated during gaming sessions. |
+| **Web Browser Engine Cleaning** | Helps clean supported temporary web engine render and code caches while strictly preserving user logins, cookies, and browsing data. |
+| **Desktop & Productivity App Caches** | Identifies and removes accumulated temporary caches from supported modern desktop and AI productivity applications. |
+| **Advanced Windows Storage Reclamation** | Provides safe maintenance options for supported legacy OS backup data and system memory dump files. |
+| **System Restore Point Integration** | Provides an automated option to create a Windows System Restore Point prior to maintenance operations. |
+| **Background Monitoring** | Optional system-tray monitoring helps track accumulated temporary data. |
+| **Cloud Services** | Internet connectivity may be used for activation, configuration, and service-related functionality. |
+| **Hardware-Bound Licensing** | Activation keys are associated with the authorized device to help prevent unauthorized use. |
+| **Automatic Updates** | The application can notify users when a newer official release is available. |
 
 ---
 
-## Installation
+##  Installation
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
@@ -67,7 +68,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ---
 
-## System Requirements
+##  System Requirements
 
 | Requirement | Minimum Specification | Recommended Specification |
 | :--- | :--- | :--- |
@@ -81,7 +82,7 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ---
 
-## How It Works
+##  How It Works
 
 Super Cleaner C uses a multi-stage workflow designed to make supported Windows maintenance tasks simple and safe while keeping proprietary implementation details private.
 
@@ -91,19 +92,19 @@ The first activation requires an Internet connection. After successful activatio
 Internet access may still be required for services such as activation-related checks, configuration synchronization, or checking for new official releases.
 
 ### 2. Scanning
-When you start a scan, the application checks supported system, GPU, browser, app, and temporary locations and calculates the amount of data that can potentially be cleaned.
+When you start a scan, the application checks supported system and temporary locations and calculates the amount of data that can potentially be cleaned.
 
-### 3. Automated Restore Point & Smart Elevation
-Users can toggle automatic System Restore Point creation before cleaning. Non-protected items (such as user caches and shader files) are cleaned directly. When cleaning system-protected components (`C:\Windows`, `C:\Windows.old`, DISM), administrative elevation is requested on-demand to perform the operation safely.
+### 3. Cleaning & Smart Elevation
+After reviewing the scan results, supported items can be cleaned through the application's interface. Non-protected items (such as user caches and temporary files) are cleaned directly. When cleaning system-protected components, administrative elevation is requested on-demand to perform the operation safely.
 
 ### 4. Background Monitoring
-When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations (3-hour interval, 5 GB threshold alert).
+When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations.
 
 > **Implementation Note:** The internal cleaning logic, detection rules, licensing implementation, cloud configuration structure, and other proprietary components are intentionally not documented in this repository.
 
 ---
 
-## Integrity & SHA-256 Verification
+##  Integrity & SHA-256 Verification
 
 Every official release binary is code-signed by **WEKA TEAM** and published with a cryptographic SHA-256 checksum. Always verify your download before running.
 
@@ -119,26 +120,24 @@ Get-AuthenticodeSignature -FilePath ".\SuperCleanerC.exe" | Format-List
 ```
 Expected Status: `Valid`  
 Signer Subject: `CN=WEKA TEAM, O=WEKA TEAM, C=EG`  
-Hash Algorithm: `SHA256`  
-Timestamp Server: `DigiCert RFC 3161 Timestamp Responder`
+Hash Algorithm: `SHA256`
 
 ---
 
-## Security & Privacy
+##  Security & Privacy
 
 Super Cleaner C is designed with privacy and security in mind.
 
 - The application does not need access to your personal documents, photos, passwords, or keystrokes to perform its supported cleaning functions.
-- Browser cleaning strictly ignores cookies, credentials, and browsing history.
-- GPU and game cleaning strictly ignores game save files and game configurations.
 - Internet connectivity is used for supported online services such as activation, configuration, and release/update checks.
 - After successful activation, normal supported operation can be performed offline.
+- Proprietary implementation details related to licensing, configuration, and internal application logic are not publicly disclosed.
 
-For additional information, please refer to [SECURITY.md](SECURITY.md) and [PRIVACY.md](PRIVACY.md).
+For additional information, please refer to the privacy and security documentation included with the official release when available.
 
 ---
 
-## License
+##  License
 
 **Super Cleaner C** is proprietary software developed and owned by **WEKA TEAM**.
 
@@ -148,7 +147,7 @@ For additional information, please refer to [SECURITY.md](SECURITY.md) and [PRIV
 
 ---
 
-## Contact & Support
+##  Contact & Support
 
 Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 
@@ -160,5 +159,5 @@ Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 ---
 
 <div align="center">
-  <sub>Built with care by WEKA TEAM. Empowering Windows users with cleaner, faster, and healthier PCs.</sub>
+  <sub>Built with ❤️ by WEKA TEAM. Empowering Windows users with cleaner, faster, and healthier PCs.</sub>
 </div>
