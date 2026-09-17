@@ -72,7 +72,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 
 ---
 
-## ☁️ Where Data is Stored & Infrastructure Security
+##  Where Data is Stored & Infrastructure Security
 
 - **Cloud Platform:** Google Firebase Realtime Database (hosted on Google Cloud Platform enterprise infrastructure).
 - **Transport Encryption:** All telemetry and license validation requests are secured via **HTTPS / TLS 1.2+** with modern cipher suites.
