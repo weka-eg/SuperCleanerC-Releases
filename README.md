@@ -156,7 +156,7 @@ Need assistance, bulk licenses, or want to report an issue? Reach out directly:
 - **Lead Developer**: WEKA TEAM
 - **Official Telegram Support**: [@Vandiom5](https://t.me/Vandiom5)
 - **Direct Telegram Channel**: [https://t.me/Vandiom5](https://t.me/Vandiom5)
-- **GitHub Repository**: [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC/Releases)
+- **GitHub Repository**: [weka-eg/SuperCleanerC-Releases](https://github.com/weka-eg/SuperCleanerC-Releases)
 
 ---
 
