@@ -48,7 +48,6 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 | **Windows Deep System** *(NEW v1.3)* | Full memory crash dumps (`MEMORY.DMP`), previous Windows installations (`Windows.old`), Windows Update delivery caches (`SoftwareDistribution\Download`), and Delivery Optimization. |
 | **System Restore Point** *(NEW v1.3)* | One-click automated Windows System Restore Point creation prior to executing deep clean operations. |
 | **Hardware-Locked Licensing** | Secure 1-PC cryptographic HWID lock with dual trial support (New Users & Global Promotional). |
-| **Silent & In-App Auto-Update** | Hardened SHA-256 binary integrity verification engine with silent background patching support. |
 
 ---
 
