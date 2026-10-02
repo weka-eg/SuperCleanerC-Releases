@@ -15,7 +15,7 @@
 
 [![Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0%20WPF%20(Self--Contained)-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![Version](https://img.shields.io/badge/Version-v1.3%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
+[![Version](https://img.shields.io/badge/Version-v1.2.1%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
 [![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Signed-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![Code Signing](https://img.shields.io/badge/Authenticode-WEKA%20TEAM%20(SHA--256)-blue?style=for-the-badge&logo=security&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Clean%20Scan-brightgreen?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1?nocache=1)
@@ -57,7 +57,7 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 Super Cleaner C is 100% portable. No installer, wizard, or third-party dependencies are required.
 
-1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.3.zip`) from the official repository:
+1. **Download** the latest release bundle (`SuperCleanerC.exe` or `SuperCleanerC_v1.2.1.zip`) from the official repository:
    - [Official Releases Repository](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
    - Or contact our team directly via [Telegram Support](https://t.me/Vandiom5)
 2. **Move** `SuperCleanerC.exe` to your preferred folder (e.g., `C:\Tools\SuperCleanerC\` or USB flash drive).
@@ -108,6 +108,12 @@ When enabled, the application can remain available in the Windows notification a
 ##  Integrity & SHA-256 Verification
 
 Every official release binary is code-signed by **WEKA TEAM** and published with a cryptographic SHA-256 checksum. Always verify your download before running.
+
+### Official v1.2.1 Checksums
+```text
+611fb73c6b5644163ccecd193688919db42e0f15c415dca590ea737a1adac9e8 *SuperCleanerC.exe
+2204b4d0696bcbed944da3e884812392eb1a5105fded2fb306489e64030cbafe *SuperCleanerC_v1.2.1.zip
+```
 
 ### 1. Verify SHA-256 Checksum via PowerShell
 ```powershell
