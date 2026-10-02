@@ -1,6 +1,6 @@
 # Privacy Policy for Super Cleaner C
 
-**Last Updated:** September 17, 2026  
+**Last Updated:** October 3, 2026  
 **Effective Date:** September 17, 2026  
 **Developer:** WEKA TEAM  
 **Contact:** [@Vandiom5](https://t.me/Vandiom5)
@@ -21,7 +21,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 | :--- | :--- | :---: | :---: |
 | **Hardware Fingerprint (HWID)** | SHA-256 one-way cryptographic hash of Windows `MachineGuid`. | Yes | Yes (Firebase) |
 | **Operating System** | Generic OS family string (e.g. `Windows 10`, `Windows 11`). | N/A | Yes (Firebase) |
-| **Application Version** | Installed version number (e.g. `1.3`). | Yes | Yes (Firebase) |
+| **Application Version** | Installed version number (e.g. `1.2.1`). | Yes | Yes (Firebase) |
 | **Sanitized Machine Name** | Partially anonymized/truncated machine moniker (first 3 characters). | N/A | Yes (Firebase) |
 | **Cleaning Metrics** | Cumulative bytes freed and count of clean operations completed. | Yes | Yes (Firebase) |
 | **IP Address** | Public IP address recorded strictly during one-time license activation. | No | Yes (Activation Only) |
@@ -38,7 +38,7 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 - **Why we need it:** To enforce our **1-PC hardware binding** policy for purchased license keys and prevent unauthorized multi-device cloning.
 
 ### 2. Operating System & Application Version
-- **What it is:** High-level OS identifier (e.g. "Windows 11" or "Windows 10") and the current version string of Super Cleaner C (e.g. "1.3").
+- **What it is:** High-level OS identifier (e.g. "Windows 11" or "Windows 10") and the current version string of Super Cleaner C (e.g. "1.2.1").
 - **Why we need it:** To deliver compatible remote cleaning rules, suppress incompatible cleaner options (such as legacy DISM routines), and notify users of critical updates or deprecated builds.
 
 ### 3. Partially Anonymized Computer Name
