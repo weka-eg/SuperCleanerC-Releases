@@ -2,6 +2,7 @@
 
 **Developer:** WEKA TEAM  
 **Effective Date:** September 17, 2026  
+**Last Updated:** October 3, 2026  
 **Primary Contact:** [@Vandiom5](https://t.me/Vandiom5)
 
 ---
@@ -20,9 +21,9 @@ We provide active security maintenance, vulnerability patches, and cloud configu
 
 | Version | Status | Release Date | Support Level |
 | :--- | :---: | :---: | :--- |
-| **v1.3** | 🟢 **Supported** | September 2026 | Active production release; receives full cloud updates and hotfixes. |
-| **v1.2** | 🟢 **Supported** | August 2026 | Production release; upgrade to v1.3 recommended. |
-| **v1.1** | 🟡 **Deprecated** | July 2026 | Limited support; upgrade to v1.3 recommended. |
+| **v1.2.1** | 🟢 **Supported** | October 2026 | Active production release; receives full cloud updates and hotfixes. |
+| **v1.2** | 🟢 **Supported** | August 2026 | Production release; upgrade to v1.2.1 recommended. |
+| **v1.1** | 🟡 **Deprecated** | July 2026 | Limited support; upgrade to v1.2.1 recommended. |
 | **v1.0** | 🔴 **End of Life** | June 2026 | Deprecated; blocked from remote configuration and activation. |
 | **< v1.0** | 🔴 **Unsupported** | Beta / Pre-release | Revoked and disabled. |
 
@@ -46,6 +47,12 @@ flowchart LR
 Every release on GitHub is published alongside an authoritative SHA-256 hash. Users can verify binary integrity using PowerShell:
 ```powershell
 Get-FileHash -Path ".\SuperCleanerC.exe" -Algorithm SHA256
+```
+
+Official v1.2.1 Release Checksums:
+```text
+611fb73c6b5644163ccecd193688919db42e0f15c415dca590ea737a1adac9e8 *SuperCleanerC.exe
+2204b4d0696bcbed944da3e884812392eb1a5105fded2fb306489e64030cbafe *SuperCleanerC_v1.2.1.zip
 ```
 
 ### 2. Authenticode Code Signing
@@ -84,24 +91,13 @@ Verify that:
 Super Cleaner C includes a hardened auto-update engine that safeguards against malicious payload delivery:
 
 1. **Remote Version Auditing:** The application retrieves update manifests directly over HTTPS from authenticated cloud endpoints.
-2. **Payload Verification:** Downloaded update binaries are verified against the published remote SHA-256 checksum prior to execution.
-3. **Isolated Staging:** Temporary update files are downloaded into a secure staging directory, verified for code signatures, and then swapped atomically.
+2. **Payload Verification:** Downloaded update binaries (both `.exe` and compressed `.zip` packages) are verified against the published remote SHA-256 checksum prior to execution or extraction.
+3. **Isolated Staging:** Temporary update files are downloaded into a secure staging directory, verified for code signatures and integrity hashes, and then swapped atomically.
 4. **Mandatory & Silent Updates:** Security hotfixes can be deployed silently or flagged as mandatory when critical vulnerabilities are patched.
 
 ---
 
-##  Code Protection & Anti-Reverse Engineering
-
-To protect intellectual property, cryptographic salts, and anti-piracy mechanisms from decompilation (e.g. dnSpy, ILSpy, de4dot):
-
-- **String & Resource Encryption:** Sensitive strings (including internal paths, cryptographic parameters, and API endpoints) are encrypted at the bytecode level.
-- **Private Member Obfuscation:** Internal fields, private methods, and cryptographic helpers are obfuscated using **Obfuscar** while maintaining stable WPF data-binding interfaces.
-- **Control Flow Protection:** Critical routines (such as activation validation and hash comparison) utilize scrambled control flow blocks.
-- **Single-File Bundling:** The application is packed as a self-contained single executable with native runtime bundling.
-
----
-
-## ⚙️ Cleaning Engine Safety & System Protection
+##  Cleaning Engine Safety & System Protection
 
 Super Cleaner C is engineered under strict non-destructive safety principles to preserve operating system stability:
 
