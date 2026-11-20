@@ -12,7 +12,7 @@
 ```
 
 **Next-Generation High-Performance Windows System Optimizer & Deep Cleaner**
-
+[![Official Website](https://img.shields.io/badge/Official%20Website-super--cleanerc.pages.dev-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://super-cleanerc.pages.dev/)
 [![Windows](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0%20WPF%20(Self--Contained)-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![Version](https://img.shields.io/badge/Version-v1.2.1%20(Production)-2ea44f?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/weka-eg/SuperCleanerC-Releases/releases)
