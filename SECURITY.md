@@ -2,7 +2,7 @@
 
 **Developer:** WEKA TEAM  
 **Effective Date:** September 17, 2026  
-**Last Updated:** October 3, 2026  
+**Last Updated:** November 20, 2026  
 **Primary Contact:** [@Vandiom5](https://t.me/Vandiom5)
 
 ---
@@ -51,8 +51,8 @@ Get-FileHash -Path ".\SuperCleanerC.exe" -Algorithm SHA256
 
 Official v1.2.1 Release Checksums:
 ```text
-611fb73c6b5644163ccecd193688919db42e0f15c415dca590ea737a1adac9e8 *SuperCleanerC.exe
-2204b4d0696bcbed944da3e884812392eb1a5105fded2fb306489e64030cbafe *SuperCleanerC_v1.2.1.zip
+6bc5fc3ad9a26be7222ee1fd523f24eadd6f4e204add321a5298e8089a81ddc9 *SuperCleanerC.exe
+78d26a1ab62d32d1a923216e63e48ccd3fe4c0c1cd37d0953fbf6386de209a42 *SuperCleanerC_v1.2.1.zip
 ```
 
 ### 2. Authenticode Code Signing
@@ -97,16 +97,33 @@ Super Cleaner C includes a hardened auto-update engine that safeguards against m
 
 ---
 
+##  Code Protection & Anti-Reverse Engineering
+
+To protect intellectual property, cryptographic salts, and anti-piracy mechanisms from decompilation (e.g. dnSpy, ILSpy, de4dot):
+
+- **String & Resource Encryption (`HideStrings`):** Sensitive strings (including internal paths, diagnostic signatures, debugger detection targets like `x64dbg`/`dnspy`, cryptographic parameters, and API endpoints) are encrypted at the IL bytecode level.
+- **Private Member & Security Obfuscation:** Internal fields, private methods, and core security services (e.g. `SecurityGuardService`, `ElevationService`) are obfuscated and symbol-stripped using **Obfuscar** while maintaining stable WPF data-binding and MVVM interfaces.
+- **Dynamic Level-2 Cloud Protection:** Heartbeat verification flags debugger attachment or tampering in real-time, backed by Firebase Level-2 authorization rules preventing unauthenticated modifications or license scraping.
+- **Control Flow & Integrity Hardening:** Critical routines (such as activation validation and hash comparison) utilize scrambled control flow blocks and sequential anti-rollback timestamp audits.
+- **Single-File Bundling & Authenticode:** The application is packed as a self-contained single executable with native .NET 8 runtime bundling, signed with an enterprise SHA-256 Authenticode certificate.
+
+---
+
 ##  Cleaning Engine Safety & System Protection
 
 Super Cleaner C is engineered under strict non-destructive safety principles to preserve operating system stability:
 
+- **Operating System Safeguard:** The **Visual Disk Space Analyzer** and **Military File Shredder** enforce hardcoded protections locking critical Windows system directories (`C:\Windows`, `C:\Program Files`, `C:\Program Files (x86)`, `C:\ProgramData`) and virtual memory containers (`pagefile.sys`, `swapfile.sys`, `hiberfil.sys`) against shredding or deletion.
+- **Process Protection Safeguard:** The **Live System Monitor** actively protects core Windows system processes (`System` PID 4, `csrss.exe`, `smss.exe`, `wininit.exe`, `lsass.exe`) by refusing termination commands.
+- **Multi-Pass Secure File Overwriting:** The **File Shredder** implements verified 1-pass zero-fill, 3-pass DoD 5220.22-M, and 7-pass military-grade overwrite patterns followed by Master File Table (MFT) renaming prior to unlinking, preventing file recovery software from reconstructing data.
+- **Non-Destructive Duplicate Detection:** The **Duplicate Files Finder** evaluates file contents using SHA-256 cryptographic hashes and guarantees that at least one original verified file copy is always protected.
+- **Sensitive Category Opt-In:** High-impact non-cache categories (`Windows Update & Old OS`, `Registry & Settings`, `Hibernation Reserve`, `Component Store`) default to unchecked, require manual user opt-in, and present interactive safety confirmation dialogs detailing consequences before execution.
 - **Package Registration Validation:** Identifies and targets only orphaned deployment packages with verified zero active system associations, safeguarding critical application dependencies.
-- **Native Subsystem Integration:** Operating system maintenance routines interface directly through official Microsoft system APIs and subsystems, preventing component or registry corruption.
-- **Non-Invasive Process Handling:** In-use and active system buffers are gracefully bypassed rather than forcefully terminated, avoiding application instability or process crashes.
-- **Privilege Separation & Smart Elevation:** The primary interface executes with standard user privileges for safe background monitoring, requesting administrative elevation on-demand only for authorized low-level maintenance tasks.
-- **System Restore Integration:** Users can automatically generate a Windows System Restore Point prior to maintenance cycles to establish a secure recovery baseline.
-- **Data & Identity Quarantine:** Cleaning operations are strictly restricted to transient cache buffers, ensuring personal credentials, user sessions, and application states remain completely untouched.
+- **Native Subsystem Integration & Isolated Elevation:** Operating system maintenance routines interface directly through official Microsoft system APIs. Standard user privileges (`asInvoker`) are maintained by default, spawning an isolated elevated runner strictly for administrative repairs (SFC, DISM, Network reset) with live console streaming.
+- **SQLite Database Optimization:** Safely vacuums and defragments SQLite database pages and WAL logs for closed browsers and desktop apps without touching user history or data.
+- **System Restore Integration:** Users can automatically generate an official Windows System Restore Point prior to maintenance cycles with direct rollback access via `rstrui.exe`.
+- **Data & Identity Quarantine:** Cleaning operations are strictly restricted to transient cache buffers, ensuring personal credentials, user sessions, saved passwords, and application states remain completely untouched.
+- **Local Audit Receipts:** Transparent local audit logging of every cleanup and shred run, recording timestamps, space reclaimed, and item counts for user review.
 
 ---
 
