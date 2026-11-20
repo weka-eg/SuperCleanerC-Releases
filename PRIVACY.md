@@ -1,6 +1,6 @@
 # Privacy Policy for Super Cleaner C
 
-**Last Updated:** October 3, 2026  
+**Last Updated:** November 20, 2026  
 **Effective Date:** September 17, 2026  
 **Developer:** WEKA TEAM  
 **Contact:** [@Vandiom5](https://t.me/Vandiom5)
@@ -25,6 +25,12 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 | **Sanitized Machine Name** | Partially anonymized/truncated machine moniker (first 3 characters). | N/A | Yes (Firebase) |
 | **Cleaning Metrics** | Cumulative bytes freed and count of clean operations completed. | Yes | Yes (Firebase) |
 | **IP Address** | Public IP address recorded strictly during one-time license activation. | No | Yes (Activation Only) |
+| **Disk Analyzer & File Trees** | Local directory sizes and file type distributions. | Volatile RAM Only | **NEVER** |
+| **Shredded Files & Documents** | File contents overwritten and permanently deleted via multi-pass shredding. | **NEVER** | **NEVER** |
+| **Large Files & Duplicate Hashes** | File paths and checksums evaluated during duplicate detection. | Volatile RAM Only | **NEVER** |
+| **Hardware Telemetry (S.M.A.R.T. / RAM)** | Live CPU, memory percent, and disk health metrics. | Volatile RAM Only | **NEVER** |
+| **System Repair Logs** | Output logs from native SFC, DISM, and network repair commands. | Volatile RAM Only | **NEVER** |
+| **Cleanup Receipts & Audit Logs** | Local history logs of maintenance runs and space reclaimed. | Yes (Local Only) | **NEVER** |
 | **Personal Files & Documents** | Any user files, photos, downloads, desktop content. | **NEVER** | **NEVER** |
 | **Browsing & Credentials** | Web history, cookies, passwords, form entries. | **NEVER** | **NEVER** |
 
@@ -59,8 +65,11 @@ This Privacy Policy explains what data Super Cleaner C processes, how and where 
 
 We strictly reject the collection of sensitive and personal data. Super Cleaner C **never** accesses, scans, reads, or transmits:
 
-- ❌ **Personal Documents:** Word files, PDFs, spreadsheets, source code, images, videos, or desktop files.
-- ❌ **Browsing History & Cookies:** URLs visited, bookmarks, search history, saved form data, or session cookies.
+- ❌ **Personal Documents & Media:** Word files, PDFs, spreadsheets, source code, personal photos, videos, or desktop files.
+- ❌ **Browsing History & Credentials:** Web URLs visited, bookmarks, search queries, saved form entries, active session logins, or saved passwords (all strictly untouched during browser cache clearing).
+- ❌ **Disk Space Analysis & File Lists:** Directory structures and file distributions evaluated by the **Visual Disk Space Analyzer**, **Large Files Finder**, and **Duplicate Files Finder** are processed strictly in local volatile memory.
+- ❌ **Shredded Data:** Files processed by the **Secure File Shredder** are overwritten on the local storage medium using multi-pass binary patterns and unlinked; no file contents or file names are ever uploaded.
+- ❌ **System Telemetry & Hardware Health:** CPU/RAM loads, drive S.M.A.R.T. health, and process lists are queried through local Windows APIs exclusively for live UI display.
 - ❌ **Credentials & Secrets:** Passwords, private keys, SSH tokens, API keys, or Windows user passwords.
 - ❌ **Keystrokes & Inputs:** Keylogger functionality is completely absent.
 - ❌ **Screen & Media Streams:** No screen captures, window recording, webcam, or microphone access.
@@ -68,7 +77,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 - ❌ **Personal Identity:** No names, phone numbers, email addresses, or payment card details.
 
 > [!NOTE]
-> All cleaning operations on temporary directories, prefetch logs, installer caches, and crash dumps operate locally in memory. The files are purged directly on your storage drive without their contents ever being uploaded to any server.
+> All cleaning operations on temporary directories, prefetch logs, installer caches, crash dumps, and database vacuuming operate locally in volatile memory. Files and databases are processed directly on your storage drive without their contents ever being uploaded to any server.
 
 ---
 
@@ -77,7 +86,7 @@ We strictly reject the collection of sensitive and personal data. Super Cleaner 
 - **Cloud Platform:** Google Firebase Realtime Database (hosted on Google Cloud Platform enterprise infrastructure).
 - **Transport Encryption:** All telemetry and license validation requests are secured via **HTTPS / TLS 1.2+** with modern cipher suites.
 - **At-Rest Encryption:** Cloud database instances are protected with standard AES-256 storage-level encryption.
-- **Local Storage:** On your local device, license validation state is safeguarded inside the Windows Registry (`HKCU\Software\SuperCleanerC\License`) using salted cryptographic hashes.
+- **Local Storage:** On your local device, license validation state is safeguarded inside the Windows Registry (`HKCU\Software\SuperCleanerC\License`) using salted cryptographic hashes. Local audit receipts and cleanup history are stored strictly on the local machine (`%LOCALAPPDATA%\SuperCleanerC\`) and are never synchronized to the cloud.
 
 ---
 
