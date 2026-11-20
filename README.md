@@ -27,7 +27,7 @@
 
 ##  Overview
 
-**Super Cleaner C** is an enterprise-grade, standalone Windows optimization and deep cleaning utility engineered in C# and WPF on .NET 8. It targets supported system junk, temporary data, caches, and Windows maintenance items that may accumulate over time.
+**Super Cleaner C** is an enterprise-grade, standalone Windows optimization, storage intelligence, and deep cleaning suite engineered in C# and WPF on .NET 8. It provides advanced disk space visualization, military-grade secure file shredding, deep system cache cleanup, hardware telemetry monitoring, Windows repair tools, and privacy protection.
 
 Designed as a **portable, single-file executable**, Super Cleaner C requires no installation, leaves no unmanaged registry leftovers, and comes fully bundled with its .NET 8 runtime for instant execution on any modern 64-bit Windows environment.
 
@@ -37,19 +37,32 @@ Designed as a **portable, single-file executable**, Super Cleaner C requires no 
 
 | Feature | Description |
 | :--- | :--- |
-| **Deep System Cleaning** | Scans supported Windows locations and identifies removable system and temporary data. |
-| **Windows Maintenance** | Provides supported Windows maintenance and optimization tools. |
-| **Developer Cache Cleaning** | Helps clean supported caches created by development tools and package managers. |
-| **Hibernation Management** | Provides a convenient option to manage Windows hibernation settings. |
-| **Graphics & Game Cache Cleaning** | Helps clean supported shader caches and platform client caches generated during gaming sessions. |
-| **Web Browser Engine Cleaning** | Helps clean supported temporary web engine render and code caches while strictly preserving user logins, cookies, and browsing data. |
-| **Desktop & Productivity App Caches** | Identifies and removes accumulated temporary caches from supported modern desktop and AI productivity applications. |
-| **Advanced Windows Storage Reclamation** | Provides safe maintenance options for supported legacy OS backup data and system memory dump files. |
-| **System Restore Point Integration** | Provides an automated option to create a Windows System Restore Point prior to maintenance operations. |
-| **Background Monitoring** | Optional system-tray monitoring helps track accumulated temporary data. |
-| **Cloud Services** | Internet connectivity may be used for activation, configuration, and service-related functionality. |
-| **Hardware-Bound Licensing** | Activation keys are associated with the authorized device to help prevent unauthorized use. |
-| **Automatic Updates** | The application can notify users when a newer official release is available. |
+| **Deep System Cleaning** | Multi-category engine targeting installer leftovers, temporary caches, prefetch traces, crash dumps, and Recycle Bin data. |
+| **Visual Disk Space Analyzer** | Interactive Squarified Treemap and category breakdown visualizing folder and file type footprints with OS safety locks. |
+| **Military-Grade File Shredder** | Securely destroys sensitive files with multi-pass overwriting (1, 3, or 7 DoD passes) and MFT renaming to prevent recovery. |
+| **Large Files Finder** | Quickly isolates forgotten oversized media, archives, and setup installers taking up gigabytes across user folders. |
+| **Empty Folders Cleaner** | Safely scans and removes zero-byte orphaned folder structures left behind by uninstalled software. |
+| **Duplicate Files Finder** | Detects identical duplicate files across user libraries while guaranteeing at least one original copy is kept safe. |
+| **Live Hardware & S.M.A.R.T. Monitor** | Real-time CPU, RAM, and physical disk S.M.A.R.T. health telemetry, process working-set trimming, and SSD TRIM optimization. |
+| **Startup Applications Manager** | Inspects and toggles autostart programs across Registry Run keys and Startup directories to accelerate boot times. |
+| **Windows Services Optimizer** | Safely disables heavy and optional background Windows services while preserving critical core system dependencies. |
+| **Game Booster & RAM Trim** | Reclaims standby memory buffers and switches Windows to High Performance power mode for smoother gaming sessions. |
+| **Windows Privacy & Telemetry Shield** | Reversible privacy policies to limit Windows tracking, advertising suggestions, diagnostics, and background telemetry. |
+| **Shell Context Menu Cleaner** | Detects and safely disables slow or orphaned third-party right-click Explorer context menu handlers. |
+| **Uninstalled App Leftovers & Shortcuts** | Discovers leftover AppData/ProgramData folders from uninstalled apps and invalid Desktop/Start Menu shortcuts. |
+| **Windows App Debloater** | Cleanly removes pre-installed non-essential Windows Store/UWP bloatware packages to free system resources. |
+| **System & Network Repair** | Elevated runner for native System File Checker (`sfc /scannow`), DISM Component Store Repair, and Network/DNS flush. |
+| **SQLite Database Vacuum** | Defragments and compacts internal databases of closed web browsers, Discord, and desktop apps for faster disk I/O. |
+| **Developer Cache Cleaning** | Purges package manager and build download caches for npm, pip, NuGet, Cargo, and Yarn without affecting projects. |
+| **Hibernation Reserve Management** | Frees several gigabytes reserved by Windows for hibernate mode (`hiberfil.sys`) with an integrated power toggle. |
+| **Graphics & Shader Cache Cleaning** | Reclaims DirectX, NVIDIA, AMD, and Intel shader caches to resolve stutter and free storage after GPU driver updates. |
+| **Web Browser Engine Cleaning** | Cleans render and script caches across Chrome, Edge, Brave, and Firefox while strictly preserving passwords, logins, and bookmarks. |
+| **System Restore Point Integration** | Native modal and automatic checkpoint creation prior to deep maintenance with direct access to Windows Restore (`rstrui.exe`). |
+| **Windows 11 System Tray Flyout** | Modern rounded tray flyout with live memory/drive gauges, 1-Click "Boost RAM Now", and quick action shortcuts. |
+| **Native Light & Dark UI Overhaul** | High-contrast vector design with instant Light/Dark switching, slim scrollbars, and detailed live hardware specifications. |
+| **Safety Confirmation & Receipts** | Explicit confirmation dialogs for high-impact actions and local receipts logging space reclaimed and items processed. |
+| **Hardware-Bound Licensing** | AES-256 encrypted license validation tied to the physical device to prevent key sharing or unauthorized cloning. |
+| **Dynamic Cloud Auto-Updates** | Real-time update checks, cryptographic SHA-256 hash validation, and isolated staging pipeline for official releases. |
 
 ---
 
@@ -85,21 +98,22 @@ Super Cleaner C is 100% portable. No installer, wizard, or third-party dependenc
 
 ##  How It Works
 
-Super Cleaner C uses a multi-stage workflow designed to make supported Windows maintenance tasks simple and safe while keeping proprietary implementation details private.
+Super Cleaner C uses a multi-stage workflow designed to make Windows optimization, storage intelligence, and system repair simple and safe while keeping proprietary implementation details private.
 
-### 1. Activation & Configuration
-The first activation requires an Internet connection. After successful activation, the application can operate in **Offline Mode** for normal supported use without requiring a continuous Internet connection.
+### 1. Activation & Offline Mode
+The first activation requires an Internet connection to authenticate your hardware-bound license key. After successful activation, Super Cleaner C operates in **Offline Mode** for normal supported use without requiring a continuous Internet connection.
 
-Internet access may still be required for services such as activation-related checks, configuration synchronization, or checking for new official releases.
+### 2. Multi-Category Scanning & Disk Analysis
+When you initiate a scan, the engine evaluates selected categories in parallel, calculating precise reclaimable storage. The **Visual Disk Space Analyzer** allows you to navigate disk structures through an interactive Squarified Treemap and file type distributions.
 
-### 2. Scanning
-When you start a scan, the application checks supported system and temporary locations and calculates the amount of data that can potentially be cleaned.
+### 3. Safe Cleaning & Smart Elevation
+Non-protected user caches and temporary files are cleaned directly with standard user permissions. System-level maintenance (such as WinSxS component reset or hibernation adjustments) and repair utilities request on-demand administrative elevation (UAC). Sensitive non-cache categories require explicit opt-in and confirmation.
 
-### 3. Cleaning & Smart Elevation
-After reviewing the scan results, supported items can be cleaned through the application's interface. Non-protected items (such as user caches and temporary files) are cleaned directly. When cleaning system-protected components, administrative elevation is requested on-demand to perform the operation safely.
+### 4. System Optimization, Repair & Privacy
+Beyond storage cleaning, the performance and repair suite provides startup management, background service tuning, game boosting with RAM trimming, SSD TRIM commands, native SFC/DISM repairs, and reversible privacy hardening.
 
-### 4. Background Monitoring
-When enabled, the application can remain available in the Windows notification area and periodically monitor supported temporary-data locations.
+### 5. Windows 11 System Tray Flyout & Monitoring
+The modern System Tray flyout provides live RAM and drive telemetry, one-click memory boosting, quick cleaning, and background maintenance alerts directly from the Windows taskbar.
 
 > **Implementation Note:** The internal cleaning logic, detection rules, licensing implementation, cloud configuration structure, and other proprietary components are intentionally not documented in this repository.
 
@@ -111,8 +125,8 @@ Every official release binary is code-signed by **WEKA TEAM** and published with
 
 ### Official v1.2.1 Checksums
 ```text
-611fb73c6b5644163ccecd193688919db42e0f15c415dca590ea737a1adac9e8 *SuperCleanerC.exe
-2204b4d0696bcbed944da3e884812392eb1a5105fded2fb306489e64030cbafe *SuperCleanerC_v1.2.1.zip
+6bc5fc3ad9a26be7222ee1fd523f24eadd6f4e204add321a5298e8089a81ddc9 *SuperCleanerC.exe
+78d26a1ab62d32d1a923216e63e48ccd3fe4c0c1cd37d0953fbf6386de209a42 *SuperCleanerC_v1.2.1.zip
 ```
 
 ### 1. Verify SHA-256 Checksum via PowerShell
@@ -135,10 +149,12 @@ Hash Algorithm: `SHA256`
 
 Super Cleaner C is designed with privacy and security in mind.
 
-- The application does not need access to your personal documents, photos, passwords, or keystrokes to perform its supported cleaning functions.
-- Internet connectivity is used for supported online services such as activation, configuration, and release/update checks.
-- After successful activation, normal supported operation can be performed offline.
-- Proprietary implementation details related to licensing, configuration, and internal application logic are not publicly disclosed.
+- The application does not access your personal documents, photos, passwords, or keystrokes to perform its cleaning functions.
+- The **Secure File Shredder** overwrites files locally with multi-pass patterns (DoD 5220.22-M) and zero cloud transmission.
+- The **Visual Disk Space Analyzer** and duplicate detectors evaluate file trees and hashes locally in volatile memory.
+- Internet connectivity is used strictly for activation, remote configuration sync, and official release updates.
+- After successful activation, normal operations can be performed offline.
+- Proprietary implementation details related to licensing, obfuscation, and internal engine logic remain protected.
 - **Malware & Integrity Scan:** Certified clean scan on [VirusTotal Report](https://www.virustotal.com/gui/url/4d99cf938f0f2e8be47fe771f4b9f938f0c1fbf3dd429f0268bf5ddb4076f3e1?nocache=1).
 
 For additional information, please refer to the privacy and security documentation included with the official release when available.
